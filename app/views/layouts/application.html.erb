@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ClothingStore</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Vast+Shadow">
+  </head>
+
+  <body>
+    <%= render 'layouts/navbar' %>
+
+
+    <div class='container'>
+      <% if flash[:notice] %>
+      <div class="alert alert-info" role="alert">
+        <%= flash[:notice] %>
+      </div>
+      <% end %>
+      <%= yield %>
+    </div>
+  </body>
+</html>

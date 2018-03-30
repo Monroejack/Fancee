@@ -1,0 +1,31 @@
+<h1>All Users</h1>
+
+<table class='table table-hover'>
+  <tr>
+    <th>
+      email
+    </th>
+    <th>
+      role
+    </th>
+    <th>
+      Actions
+    </th>
+  </tr>
+  <% @users.each do |user| %>
+  <tr>
+    <td>
+      <%= user.email %>
+    </td>
+    <td>
+      <%= user.role %>
+    </td>
+    <td>
+      <%= form_with model: user, url: update_user_role_path(id: user), method: :patch do |f| %>
+        <%= f.select :role, [['Admin', 'admin'], ['Guest', 'guest']] %>
+        <%= f.submit %>
+      <% end %>
+    </td>
+  </tr>
+  <% end %>
+</table>

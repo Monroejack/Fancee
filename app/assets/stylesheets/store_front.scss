@@ -1,0 +1,51 @@
+#landing_page_title {
+  position: absolute;
+height: 95px;
+left: 33.54%;
+right: 33.61%;
+top: calc(50% - 95px/2 - 47.5px);
+
+font-family: Vast Shadow;
+font-style: normal;
+font-weight: normal;
+line-height: 95px;
+font-size: 76px;
+letter-spacing: 5px;
+
+color: #F2F2F2;
+mix-blend-mode: normal;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#landing_page_subtitle {
+  position: absolute;
+width: 616px;
+height: 95px;
+left: 412px;
+top: calc(50% - 95px/2 - -30px);
+
+font-family: Arcon;
+font-style: rounded-normal;
+font-weight: normal;
+line-height: 95px;
+font-size: 64px;
+letter-spacing: 6px;
+
+color: rgba(242, 242, 242, 0.7);
+}
+
+#landing_page_btn {
+  position: absolute;
+left: 45.35%;
+right: 45.42%;
+top: 68.7%;
+bottom: 25.4%;
+font-size: 18px;
+background: #FFFFFF;
+color: #412356;
+font-family: 'Arcon Regular';
+}
+
+#landing_page_btn a {
+  color: #412356;
+}
